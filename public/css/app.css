@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Форма авторизации */
+.login-form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+/* Задачи */
+.tasks-container {
+    margin-top: 20px;
+}
+
+.task {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.task .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.task .description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.task .due-date {
+    font-size: 14px;
+    color: #999;
+}
+
+.task .status {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.task .actions {
+    margin-top: 10px;
+}
+
+.task .actions a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.task .actions a:hover {
+    color: #4caf50;
+}
+
+/* Форма добавления задачи */
+.add-task-form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.add-task-form h2 {
+    margin-bottom: 20px;
+}
+
+.add-task-form input,
+.add-task-form select,
+.add-task-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.add-task-form button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-task-form button:hover {
+    background-color: #45a049;
+}
+
+.buttons > a {
+    padding: 10px 20px;
+    background-color: #dfdfdf;
+    color: #2c2c2c;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttons {
+    margin-top: 25px;
+    text-align: center;
+}
