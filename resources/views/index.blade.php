@@ -68,10 +68,15 @@
                 <div class="status">Статус: {{ $note->status }}</div>
                 <div class="actions">
                     <a href="{{ route('tasks.edit', ['task' => $note->id]) }}">Edit</a>
-                    <a href="#">Delete</a>
+                    <a href="#" onclick="event.preventDefault(); document.getElementById('delete-form').submit();">Delete</a>
                 </div>
             </div>
         </div>
+        <form id="delete-form" action="{{ route('tasks.delete', ['id' => $note->id]) }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <!-- Дополнительные поля формы, если необходимо -->
+        </form>
         @endforeach
     </div>
 </body>

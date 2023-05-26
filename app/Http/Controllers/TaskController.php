@@ -57,4 +57,10 @@ class TaskController extends Controller
         $tasks = Task::whereDate('datetime', $request['date']);
         return view('home', $tasks);
     }    
+
+    public function delete($id) {
+        $task = Task::find($id);
+        $task->delete();
+        return redirect()->route('home')->with('success', 'Task deleted successfully.');
+    }
 }
